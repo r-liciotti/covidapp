@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f1f1f1;
+}
+
+.row{
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.box {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.recap .box span{
+  font-size: 35px;
+    font-weight: bold;
+}
+
+.recap .conf-border{
+  border-bottom: 10px solid green;
+}
+
+.recap .attivi-border{
+  border-bottom: 10px solid #119dc7;
+}
+
+.recap .morti-border{
+  border-bottom: 10px solid #c12222;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Covid App</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <p>COVID TRACKER</p>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+      <div class="dropdown">
+        <label for="cars">Stato:</label>
+    <select name="stati" id="stato" onchange="getSelect()">
+      <option value="global">Global</option>
+      <option value="italy">Italia</option>
+      <option value="spain">Spagna</option>
+      <option value="france">Francia</option>
+      <option value="united-states">America</option>
+    </select>
+
+      </div>
+      </div>
+    </div>
+    <div class="row recap">
+      <div class="col-3 box conf-border">
+        <span id="confermati">0</span>
+        <h5>Confermati</h5>
+
+      </div>
+      <div class="col-3 box attivi-border">
+        <span id="ricoverati">654</span>
+        <h5>Ricoverati</h5>
+      </div>
+      <div class="col-3 box morti-border">
+        <span id="morti">654</span>
+        <h5>Morti</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8 box">
+        <!-- <h3>All Times</h3> -->
+        <canvas id="myChart" ></canvas>
+
+
+      </div>
+      <div class="col-3 box">
+        <h5>Recovery Rate</h5>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
